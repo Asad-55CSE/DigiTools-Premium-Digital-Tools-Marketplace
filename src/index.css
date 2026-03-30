@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Sora', sans-serif;
+  }
+
+  body {
+    @apply bg-white text-gray-800 antialiased;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+@layer components {
+  .btn-primary-custom {
+    @apply bg-purple-600 hover:bg-purple-700 text-white font-semibold px-6 py-2.5 rounded-full transition-all duration-200 shadow-md hover:shadow-lg hover:-translate-y-0.5;
+  }
+
+  .btn-outline-custom {
+    @apply border border-purple-600 text-purple-600 hover:bg-purple-50 font-semibold px-6 py-2.5 rounded-full transition-all duration-200;
+  }
+
+  .tag-badge {
+    @apply text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wide;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold text-gray-900 text-center;
+  }
+
+  .section-subtitle {
+    @apply text-gray-500 text-center mt-3 text-base max-w-xl mx-auto;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    background: linear-gradient(135deg, #7C3AED, #A78BFA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+  }
+}
+
+/* React Toastify overrides */
+.Toastify__toast {
+  font-family: 'Sora', sans-serif !important;
+  border-radius: 12px !important;
+  font-size: 14px !important;
+}
+
+.Toastify__toast--success {
+  background: #f0fdf4 !important;
+  color: #166534 !important;
+  border: 1px solid #bbf7d0 !important;
+}
+
+.Toastify__toast--error {
+  background: #fef2f2 !important;
+  color: #991b1b !important;
+  border: 1px solid #fecaca !important;
+}
+
+.Toastify__toast--info {
+  background: #f5f3ff !important;
+  color: #4c1d95 !important;
+  border: 1px solid #ddd6fe !important;
+}
+
+.Toastify__progress-bar--success {
+  background: #22c55e !important;
+}
+
+.Toastify__progress-bar--error {
+  background: #ef4444 !important;
+}
+
+.Toastify__progress-bar--info {
+  background: #7C3AED !important;
+}
