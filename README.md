@@ -1,5 +1,7 @@
 # DigiTools — Premium Digital Tools Marketplace
 
+<img src="./screenshot/digishot.png" alt="App Screenshot">
+
 > A modern, fully responsive digital tools buying platform built with React.js and Tailwind CSS. Browse, add to cart, and checkout premium digital products with a sleek UI and smooth user experience.
 
 ---
